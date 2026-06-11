@@ -1,0 +1,11 @@
+// WAP that reads a number in meters, converts it to feet and displays the result.
+// Formula: Feet = Meter × 3.28084
+
+import 'dart:io';
+
+void main() {
+  stdout.write("Enter in meter : ");
+  double meter = double.parse(stdin.readLineSync()!);
+
+  print("Feet = ${meter * 3.28084}");
+}
