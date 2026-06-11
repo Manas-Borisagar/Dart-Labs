@@ -3,13 +3,17 @@ import 'dart:io';
 // % of 5 subjects
 void main() {
   print("Enter Marks for subject 1 : ");
-  int sub1 = int.parse(stdin.readLineSync()!);
+  double sub1 = double.parse(stdin.readLineSync()!);
   print("Enter Marks for subject 2 : ");
-  int sub2 = int.parse(stdin.readLineSync()!);
+  double sub2 = double.parse(stdin.readLineSync()!);
   print("Enter Marks for subject 3 : ");
-  int sub3 = int.parse(stdin.readLineSync()!);
+  double sub3 = double.parse(stdin.readLineSync()!);
   print("Enter Marks for subject 4 : ");
-  int sub4 = int.parse(stdin.readLineSync()!);
+  double sub4 = double.parse(stdin.readLineSync()!);
   print("Enter Marks for subject 5 : ");
-  int sub5 = int.parse(stdin.readLineSync()!);
+  double sub5 = double.parse(stdin.readLineSync()!);
+
+  double ans = ((sub1 + sub2 + sub3 + sub4 + sub5) / 500) * 100;
+
+  print(ans);
 }
